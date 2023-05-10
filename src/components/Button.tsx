@@ -12,7 +12,7 @@ const Button = ({ children, size, style, type }: IButton) => {
   return (
     <button
       className={clsx(
-        "cursor-pointer text-white px-5 py-2 rounded-md transform transition-colors first-letter:capitalize",
+        "cursor-pointer px-5 py-2 rounded-md transform transition-colors first-letter:capitalize",
         {
           // deal with button size
           "text-sm": size === "small", // small
@@ -30,7 +30,7 @@ const Button = ({ children, size, style, type }: IButton) => {
         },
         {
           // deal with button style
-          "": style === "default", //default
+          "text-white": style === "default", //default
           //
           //
           "bg-transparent hover:bg-transparent": style === "outline", //outline
